@@ -13,6 +13,14 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
+  'jquery': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'dist/jquery'
+  },
+  'fullpage.js': {
+    main: 'jquery.fullPage.js'
+  },
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,10 +40,16 @@ const barrels: string[] = [
 
   // Thirdparty barrels.
   'rxjs',
+  'jquery',
+  'ng2-fullpage',
+  'fullpage.js',
 
   // App specific barrels.
   'app',
   'app/shared',
+  'app/cover',
+  'app/about',
+  'app/projects',
   /** @cli-barrel */
 ];
 
@@ -51,6 +65,10 @@ declare var System: any;
 System.config({
   map: {
     '@angular': 'vendor/@angular',
+    'ng2-fullpage': 'vendor/ng2-fullpage/',
+    'jquery': 'vendor/jquery',
+    'fullpage.js': 'vendor/fullpage.js',
+    'fullpage.css': 'vendor/fullpage.js/jquery.fullPage.css',
     'rxjs': 'vendor/rxjs',
     'main': 'main.js'
   },

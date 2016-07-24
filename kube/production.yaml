@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: portifolio
+  name: cesco-ingresskubec
+spec:
+  rules:
+  - host: www.cescoferraro.xyz
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: cesco
+          servicePort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: portifolio
+  name: cesco
+  labels:
+    name: cesco
+spec:
+  selector:
+    name: cesco
+  ports:
+  - name: web
+    port: 80
+    targetPort: 80
+    protocol: TCP
+
+
+

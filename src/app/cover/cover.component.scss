@@ -1,0 +1,22 @@
+.title {
+  margin-top: 2em;
+}
+
+:host{
+    background-color: rebeccapurple;
+    text-align: center
+}
+
+h2{
+  font-size: -webkit-xxx-large;
+      text-align: center;
+  /*color: white;*/
+}
+
+.photo {
+    max-width: 70%;
+    max-height: 50%;
+    border: 30px solid;
+    border-radius: 25px;
+    display: inline-block
+}
