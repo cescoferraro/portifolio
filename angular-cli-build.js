@@ -18,8 +18,11 @@ module.exports = function (defaults) {
 			'ng2-fullpage/**/*.+(js|js.map)',
 			'jquery/**/*.js',
 			'bootstrap/**/*.+(js|css)',
+			'@angular2-material/**/*.js',
 			'fullpage.js/**/*.+(css|js)',
-			'@angular/**/*.+(js|js.map)'
+			'@angular/**/*.+(js|js.map)',
+			'textfit/textFit.js',
+			'flowtype/index.js'
 		]
 	});
 };

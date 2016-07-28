@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('fonts/WHOOPASS.TTF'); /* IE9 Compat Modes */
+
+}
+
 .title {
   margin-top: 2em;
 }
@@ -8,9 +14,10 @@
 }
 
 h2{
-  font-size: -webkit-xxx-large;
-      text-align: center;
-  /*color: white;*/
+    font-size: -webkit-xxx-large;
+    text-align: center;
+    color: white;
+    font-family: 'MyWebFont', sans-serif;
 }
 
 .photo {

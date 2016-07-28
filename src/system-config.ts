@@ -21,6 +21,29 @@ const packages: any = {
   'fullpage.js': {
     main: 'jquery.fullPage.js'
   },
+    'fullpage.css': {
+    main: 'jquery.fullPage.css'
+  },
+  '@angular2-material/core': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'core.js'
+  },
+  '@angular2-material/checkbox': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'checkbox.js'
+  },
+  '@angular2-material/input': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'input.js'
+  },
+  '@angular2-material/card': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'card.js'
+  },
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -68,8 +91,9 @@ System.config({
     'ng2-fullpage': 'vendor/ng2-fullpage/',
     'jquery': 'vendor/jquery',
     'fullpage.js': 'vendor/fullpage.js',
-    'fullpage.css': 'vendor/fullpage.js/jquery.fullPage.css',
+    // 'fullpage.css': 'vendor/fullpage.js/jquery.fullPage.css',
     'rxjs': 'vendor/rxjs',
+    '@angular2-material': 'vendor/@angular2-material',
     'main': 'main.js'
   },
   packages: cliSystemConfigPackages
