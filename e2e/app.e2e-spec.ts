@@ -1,10 +1,10 @@
-import { CescoPage } from './app.po';
+import { PorPage } from './app.po';
 
-describe('cesco App', function() {
-  let page: CescoPage;
+describe('por App', function() {
+  let page: PorPage;
 
   beforeEach(() => {
-    page = new CescoPage();
+    page = new PorPage();
   });
 
   it('should display message saying app works', () => {

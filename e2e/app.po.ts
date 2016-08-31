@@ -1,4 +1,6 @@
-export class CescoPage {
+import { browser, element, by } from 'protractor/globals';
+
+export class PorPage {
   navigateTo() {
     return browser.get('/');
   }
