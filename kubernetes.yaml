@@ -1,0 +1,63 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: portifolio
+  name: portifolio-ingress
+spec:
+  rules:
+  - host: www.cescoferraro.xyz
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: portifolio
+          servicePort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: portifolio
+  name: portifolio
+  labels:
+    name: portifolio
+spec:
+  selector:
+    name: portifolio
+  ports:
+  - name: web
+    port: 80
+    targetPort: 80
+    protocol: TCP
+
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  namespace: portifolio
+  name: portifolio
+  labels:
+    name: portifolio
+spec:
+  replicas: 1
+  selector:
+    name: portifolio
+  template:
+    metadata:
+      namespace: portifolio
+      labels:
+        name: portifolio
+    spec:
+      containers:
+        - image: cescoferraro/portifolio:latest
+          imagePullPolicy: Always
+          name: portifolio
+          env:
+          - name: KUBERNETES
+            value: "true"
+          - name: BRANCH
+            value: "production"
+
+
+
+
+
