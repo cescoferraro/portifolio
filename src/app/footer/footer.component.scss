@@ -1,15 +1,10 @@
-.title{
-  text-align: center;
-  font-family: 'MyWebFont', sans-serif;
-}
-.left p {
-    font-size: 1em;
-    text-align: justify;
-    font-family: 'MyWebFont', sans-serif;
-}
-
-
 .about {
     height: 50%;
     transform: translateY(50%);
+    h2 {
+    font-family: 'Avenir_Next_New_Regular', Fallback, sans-serif !important;
+    }
+    md-input {
+      width: 100%;
+    }
 }

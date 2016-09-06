@@ -14,7 +14,8 @@
     "dpush": "docker push cescoferraro/portifolio:latest",
     "kdelete": "kubectl delete -f kubernetes.yaml",
     "kcreate": "kubectl create -f kubernetes.yaml",
-    "deploy": "npm run build && npm run dbuild && npm run dpush && npm run kdelete && npm run kcreate"
+    "predeploy": "npm run build && npm run dbuild && npm run dpush",
+    "deploy": "npm run predeploy && kubectl apply -f kubernetes.yaml"
   },
   "private": true,
   "dependencies": {
@@ -26,17 +27,21 @@
     "@angular/platform-browser": "2.0.0-rc.5",
     "@angular/platform-browser-dynamic": "2.0.0-rc.5",
     "@angular/router": "3.0.0-rc.1",
+    "@angular2-material/button": "^2.0.0-alpha.7-4",
     "@angular2-material/card": "^2.0.0-alpha.7-4",
     "@angular2-material/core": "^2.0.0-alpha.7-4",
     "@angular2-material/input": "^2.0.0-alpha.7-4",
+    "bootstrap": "^4.0.0-alpha.3",
     "core-js": "^2.4.0",
+    "ng2-fullpage": "git+https://github.com/cescoferraro/ng2-fullpage.git",
     "rxjs": "5.0.0-beta.11",
     "ts-helpers": "^1.1.1",
     "zone.js": "0.6.12"
   },
   "devDependencies": {
-    "@angular2-material/input": "^2.0.0-alpha.7-9",
+    "@types/hammerjs": "^2.0.32",
     "@types/jasmine": "^2.2.30",
+    "@types/jquery": "^1.10.31",
     "angular-cli": "1.0.0-beta.11-webpack.8",
     "breakpoint-sass": "^2.7.0",
     "codelyzer": "~0.0.26",

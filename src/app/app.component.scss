@@ -1,4 +1,8 @@
+@font-face {
+  font-family: 'Avenir_Next_New_Regular';
+  src: url('assets/fonts/Avenir_Next_New_Regular.ttf');
+}
 
-
-
-
+body {
+  font-family: 'Avenir_Next_New_Regular', Fallback, sans-serif !important;
+}

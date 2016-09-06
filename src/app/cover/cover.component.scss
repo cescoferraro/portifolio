@@ -1,32 +1,30 @@
 $cover-color: #663399;
-$photo-url: 'https://scontent.fbfh1-1.fna.fbcdn.net/v/t1.0-9/10258726_784175634928379_6893945058878091727_n.jpg?oh=12b95fb341d5cf5639af395020a1c67a&oe=58220655';
+$photo-url: '/assets/img/selfie.jpg';
 
-@font-face {
-  font-family: 'MyWebFont';
-  src: url('fonts/WHOOPASS.TTF');
-}
 
 
 :host {
   background-color: $cover-color;
   text-align: center;
-  .content {
-    .title {
-      margin-top: 2em;
-    }
-    .description {
-      color: white;
-      font-family: 'MyWebFont', sans-serif;
-      font-size: -webkit-xxx-large;
-      text-align: center;
-    }
-    .photo {
-      background: url($photo-url) repeat-x fixed 0 0;
-      border: 30px solid;
-      border-radius: 25px;
-      display: inline-block;
-      max-height: 50%;
-      max-width: 70%;
-    }
+  .top-layer{
+    height: 20vh;
+
+  }
+  .photo {
+
+    height: 60vh;
+    background: url($photo-url);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 70vw;
+    margin-left: 15vw;
+  }
+
+  .caption{
+    height: 20vh;
+    color: white;
+    // background-color: rgba(255,0,0,0.7);
+    padding-top: 5vh;
   }
 }
