@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
     @Input() title
+    @Input() subtitle
     @Input() link
     @Input() logo
     @Input() img

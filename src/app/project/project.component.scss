@@ -1,29 +1,18 @@
+@import "../../styles";
+
 :host{
-  font-family: 'Avenir_Next_New_Regular' !important;
   .container{
+    md-card-title-group a {
+      color: $primary-text-color;
+    }
     md-card-content {
       font-family: 'Avenir_Next_New_Regular' !important;
-
     }
-    padding-left: 50px;
-    padding-right: 50px;
-    .header{
-      height: 20vh;
-      text-align: center;
-      h2{
-        position: relative;
-        bottom: 20px;
-      }
+    md-card-title {
+      font-family: 'Avenir_Next_New_Regular' !important;
     }
-    .logo{
-      height: 40vh;
-      img {
-        height: 200px;
-        width: 200px;
-      }
-    }
-    .caption{
-      height: 40vh;
+    md-card-subtitle {
+      font-family: 'Avenir_Next_New_Regular' !important;
     }
   }
 }

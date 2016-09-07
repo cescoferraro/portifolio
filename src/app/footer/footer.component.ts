@@ -26,7 +26,7 @@ export class FooterComponent implements OnInit {
 
     hire() {
 
-        window.open('mailto:francescoaferraro@gmail.com?subject=subject&body='+this.hireMe.value.subject);
+        window.open('mailto:francescoaferraro@gmail.com?subject=Iwannahireyou&body='+this.hireMe.value.subject);
         console.log("skfjkndf")
     }
 }
