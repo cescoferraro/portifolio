@@ -1,3 +1,30 @@
-:host {
-  color: white;
+:host{
+  font-family: 'Avenir_Next_New_Regular' !important;
+  .container{
+    md-card-content {
+      font-family: 'Avenir_Next_New_Regular' !important;
+
+    }
+    padding-left: 50px;
+    padding-right: 50px;
+    .header{
+      height: 20vh;
+      text-align: center;
+      h2{
+        position: relative;
+        bottom: 20px;
+      }
+    }
+    .logo{
+      height: 40vh;
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
+    .caption{
+      height: 40vh;
+    }
+  }
 }
+

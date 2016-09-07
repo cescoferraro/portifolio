@@ -1,11 +1,6 @@
 import { Component, Input, Output, ViewEncapsulation } from '@angular/core';
 import {MnFullpageDirective, MnFullpageOptions} from 'ng2-fullpage';
 
-
-declare var require: any
-
-
-
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -17,7 +12,7 @@ export class AppComponent {
     navigation: false,
     navigationPosition: "left",
     keyboardScrolling: true,
-    slidesNavigation: false,
+    slidesNavigation: true,
     slidesNavPosition: "bottom",
     controlArrows: false,
     verticalCentered: true,
@@ -25,5 +20,4 @@ export class AppComponent {
     mnFullpageSlidesNavPosition: "bottom"
 
   });
-  title = 'app works!';
 }

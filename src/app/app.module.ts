@@ -10,7 +10,11 @@ import { AboutComponent } from './about/about.component'
 import { FooterComponent } from './footer/footer.component'
 import { MdInput } from '@angular2-material/input';
 import { MdCard } from '@angular2-material/card';
-import { ProjectComponent } from './project/project.component'
+import { MdToolbar } from '@angular2-material/toolbar';
+import { MdButton } from '@angular2-material/button';
+import { MdIcon } from '@angular2-material/icon';
+import { MdIconRegistry } from '@angular2-material/icon';
+import { ProjectComponent } from './project/project.component';
 
 
 
@@ -21,6 +25,9 @@ import { ProjectComponent } from './project/project.component'
         MnFullpageDirective,
         MdInput,
         MdCard,
+        MdButton,
+        MdIcon,
+        MdToolbar,
         AppComponent,
         CoverComponent,
         AboutComponent,
@@ -31,11 +38,10 @@ import { ProjectComponent } from './project/project.component'
         FormsModule,
         HttpModule
     ],
-    providers: [FormBuilder],
+    providers: [FormBuilder,MdIconRegistry],
     bootstrap: [
         AppComponent,
         CoverComponent,
-        ProjectComponent,
         AboutComponent,
         FooterComponent,
     ]

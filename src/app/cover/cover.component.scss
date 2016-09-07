@@ -1,18 +1,19 @@
-$cover-color: #663399;
+@import "../../styles";
+
 $photo-url: '/assets/img/selfie.jpg';
 
 
 
 :host {
-  background-color: $cover-color;
+  background-color: $primary-color;
   text-align: center;
   .top-layer{
-    height: 20vh;
+    height: 15vh;
 
   }
   .photo {
 
-    height: 60vh;
+    height: 65vh;
     background: url($photo-url);
     background-repeat: no-repeat;
     background-attachment: fixed;

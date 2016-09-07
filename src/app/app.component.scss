@@ -1,3 +1,5 @@
+@import "../styles.scss";
+
 @font-face {
   font-family: 'Avenir_Next_New_Regular';
   src: url('assets/fonts/Avenir_Next_New_Regular.ttf');
@@ -5,4 +7,28 @@
 
 body {
   font-family: 'Avenir_Next_New_Regular', Fallback, sans-serif !important;
+}
+
+.fp-controlArrow {
+  top:75%;
+}
+.md-yeah{
+  background-color: $primary-color-dark;
+}
+md-toolbar{
+  position: fixed;
+  z-index: 1;
+  .toolbar-title{
+    color: $primary-color-text;
+  }
+  .toolbar-icons a {
+    color: $primary-color-text;
+  }
+}
+
+
+.fill-space {
+  // This fills the remaining space, by using flexbox.
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
 }

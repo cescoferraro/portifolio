@@ -1,15 +1,35 @@
-<div mnFullpage [mnFullpageNavigation]="true" [mnFullpageKeyboardScrolling]="true">
-	<cover class="section"></cover>
-	<about class="section"></about>
-	<div class="section">
-		<div class="slide" style="background-color: green;">
-			<project [title]="title" [description]="'a gulp plugin tharocks your world'"></project>
-			<h2>blog.cescoferraro.xyz</h2>
+<md-toolbar [color]="'yeah'">
+	<span class="toolbar-title">cescoferraro.xyz</span>
+
+	<!-- This fills the remaining space of the current row -->
+	<span class="fill-space"></span>
+
+	<span class="toolbar-icons">
+		<a href="/#cover"><md-icon>home</md-icon></a>
+		<a href="/#projects"><md-icon>dashboard</md-icon></a>
+		<a href="/#about"><md-icon>person</md-icon></a>
+		<a href="/#hire-me"><md-icon>phone</md-icon></a>
+	</span>
+
+</md-toolbar>
+
+<div [mnFullpage]="options">
+	<cover class="section" data-anchor="cover"></cover>
+	<about class="section" data-anchor="about"></about>
+	<div class="section" data-anchor="projects">
+		<div class="slide">
+			<app-project [title]="'Gulp-Golang'" [img]="'/assets/img/gulp2.png'" [logo]="'/assets/img/gopher.svg'" [link]="'www.github.com/cescoferraro/gulp-golang'"
+				[description]="'A gulp wrapper for golang commands. Completely inspired by gulp-go. This aims to let users have better control of their golang environment with the build system. Because go run does not solve all problems.'"></app-project>
 		</div>
-		<div class="slide" style="background-color: green;">
-			<project [title]="'jksdnfjnsdfk'" [description]="'sdfsdfdsfsdf'"></project>
-			<h2>blog.cescoferraro.xyz</h2>
+		<div class="slide">
+			<app-project [title]="'Power [Iot]'" [link]="'iot.cescoferraro.xyz'" [logo]="'/assets/img/iot.png'" [img]="'/assets/img/iotscreen.png'"
+				[description]="'This projects aims to provide cheap solution to home automation systems.
+							Its an Ionic 2 app develop with all the cool tech you se around Angular2 blog, but as its tech, its still beta. But you can check it out!'"></app-project>
+		</div>
+		<div class="slide">
+			<app-project [title]="'My Blog'" [img]="'/assets/img/blog.png'" [logo]="'/assets/img/blog.png'" [link]="'blog.cescoferraro.xyz'"
+				[description]="'Here it is where I pour my tech heart. Mainly about golang/angular2/ionic2/swift'"></app-project>
 		</div>
 	</div>
-	<footer class="section"> </footer>
+	<footer class="section" data-anchor="hire-me"> </footer>
 </div>
