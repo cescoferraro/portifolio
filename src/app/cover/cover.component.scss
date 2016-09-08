@@ -7,9 +7,9 @@ $photo-url: '/assets/img/selfie.jpg';
 :host {
   background-color: $primary-color;
   text-align: center;
+  display:block;
   .top-layer{
     height: 15vh;
-
   }
   .photo {
 

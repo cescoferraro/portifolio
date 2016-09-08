@@ -1,19 +1,30 @@
 @import "../../styles";
+$high-tide: 768px;
 
-:host{
-  .container{
-    md-card-title-group a {
-      color: $primary-text-color;
-    }
-    md-card-content {
-      font-family: 'Avenir_Next_New_Regular' !important;
-    }
-    md-card-title {
-      font-family: 'Avenir_Next_New_Regular' !important;
-    }
-    md-card-subtitle {
-      font-family: 'Avenir_Next_New_Regular' !important;
-    }
+.cover-photo {
+  max-width: 550px;
+  @include breakpoint($high-tide) {
+    display:block;
+    margin: 0;
+  }
+}
+.card-responsive {
+  max-width: 600px;
+  margin: auto;
+  display: block;
+}
+
+.responsive {
+  max-width: 550px;
+  @include breakpoint($high-tide) {
+    margin:auto;
   }
 }
 
+
+md-card-title-group a {
+  color: $primary-text-color;
+}
+.custom-font {
+  font-family: 'Avenir_Next_New_Regular' !important;
+}

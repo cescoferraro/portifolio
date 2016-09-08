@@ -1,13 +1,17 @@
 .container {
-    transform: translateY(50%);
+  // transform: translateY(calc(64px + (60vh - 64px)/2));
+  height: 40vh;
+}
+.card-responsive {
+  max-width: 600px;
+  margin: auto;
+  display: block;
 }
 
-.footer {
-    height: 50%;
-    h2 {
-    font-family: 'Avenir_Next_New_Regular', Fallback, sans-serif !important;
-    }
-    md-input {
-      width: 100%;
-    }
+md-card-title {
+  font-family: 'Avenir_Next_New_Regular', Fallback, sans-serif !important;
+}
+
+md-input {
+  width: 100%;
 }

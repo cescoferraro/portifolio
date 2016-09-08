@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ElementRef } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -15,7 +16,10 @@ import { MdButton } from '@angular2-material/button';
 import { MdIcon } from '@angular2-material/icon';
 import { MdIconRegistry } from '@angular2-material/icon';
 import { ProjectComponent } from './project/project.component';
-
+import { router } from './app.router';
+import { DevComponent } from './dev/dev.component';
+import { EngComponent } from './eng/eng.component';
+import { ResumeComponent } from './resume/resume.component';
 
 
 
@@ -32,18 +36,19 @@ import { ProjectComponent } from './project/project.component';
         CoverComponent,
         AboutComponent,
         FooterComponent,
-        ProjectComponent],
+        ProjectComponent,
+        DevComponent,
+        EngComponent,
+        ResumeComponent],
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
+        HttpModule,
+        router
     ],
     providers: [FormBuilder,MdIconRegistry],
     bootstrap: [
-        AppComponent,
-        CoverComponent,
-        AboutComponent,
-        FooterComponent,
+        AppComponent
     ]
 })
 export class AppModule { }

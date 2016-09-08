@@ -1,0 +1,27 @@
+@import "../../styles.scss";
+
+body{
+  font-family: 'Avenir_Next_New_Regular';
+}
+html{
+  font-size: 0.8em;
+}
+
+:host {
+  display: block;
+  padding: 5vh;
+}
+
+.center { text-align: center }
+
+.lines {
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.name {
+}
+
+.personal-info{
+}
+

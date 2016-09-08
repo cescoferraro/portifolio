@@ -10,12 +10,12 @@
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
     "build": "ng build --prod",
-    "dbuild": "docker build -t cescoferraro/portifolio:latest .  ",
-    "dpush": "docker push cescoferraro/portifolio:latest",
-    "kdelete": "kubectl delete -f kubernetes.yaml",
-    "kcreate": "kubectl create -f kubernetes.yaml",
-    "predeploy": "npm run build && npm run dbuild && npm run dpush",
-    "deploy": "npm run predeploy && kubectl apply -f kubernetes.yaml"
+    "docker-build": "docker build -t cescoferraro/portifolio:latest .  ",
+    "docker-push": "docker push cescoferraro/portifolio:latest",
+    "docker-run": "docker run -p 80:80 cescoferraro/portifolio:latest",
+    "kube-delete": "kubectl delete -f kubernetes.yaml",
+    "kube-create": "kubectl create -f kubernetes.yaml",
+    "deploy": "npm run build && npm run docker-build && npm run docker-push && kubectl delete -f kubernetes.yaml && kubectl create -f kubernetes.yaml"
   },
   "private": true,
   "dependencies": {

@@ -1,26 +1,39 @@
+@import "../../styles";
+$high-tide: 768px;
 
-.title{
-  text-align: center;
+.container{
+  // transform: translateY(calc(64px + (40vh - 64px)/2));
 }
-.left p {
-    font-size: 2.5vh;
-    text-align: justify;
-    font-family: 'Avenir_Next_New_Regular', Fallback, sans-serif;
-}
-
-
 .about {
-  position: relative;
-    top: 50%;
-    height: 50%;
-    transform: translateY(25%);
+  height: 65vh;
 }
 
-.namedropContainer {
-  text-align: center
+md-card-content{
+    p {
+    font-family: 'Avenir_Next_New_Regular', Fallback, sans-serif !important;
+    @include breakpoint(max-width 190px) {font-size: 7px; }
+    @include breakpoint(190px 230px) {font-size: 8px; }
+    @include breakpoint(230px 280px) {font-size: 10px; }
+    @include breakpoint(280px 320px) {font-size: 11px; }
+    @include breakpoint(321px 450px) {font-size: 12px; }
+    @include breakpoint(450px 500px) {font-size: 14px; }
+    @include breakpoint(500px 768px) {font-size: 15px; }
+    @include breakpoint(768px) {font-size: 16px; }
   }
+}
 
-.namedrop {
+.card-responsive {
+  max-width: 600px;
+  margin: auto;
+  display: block;
+}
+
+md-card-actions{
+  text-align: center;
+  .namedrop {
     width: 10%;
+    max-height: 15vh;
     display: inline-block
   }
+}
+
