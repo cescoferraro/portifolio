@@ -1,30 +1,41 @@
-import { Component, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
-import {MnFullpageDirective, MnFullpageOptions} from 'ng2-fullpage';
+//noinspection TypeScriptCheckImport
+import {MnFullpageOptions} from 'ng2-fullpage';
+import {Component, Output} from '@angular/core';
+import {Project} from '../shared'
 
 
 @Component({
-  selector: 'app-dev',
-  templateUrl: './dev.component.html',
-  styleUrls: ['./dev.component.scss']
+    selector: 'app-dev',
+    templateUrl: './dev.component.html',
+    styleUrls: ['./dev.component.scss']
 })
-export class DevComponent implements OnInit {
+export class DevComponent {
+    gulpGolang: Project;
 
-  @Output() private options: MnFullpageOptions = new MnFullpageOptions({
-    navigation: false,
-    navigationPosition: "left",
-    keyboardScrolling: true,
-    slidesNavigation: true,
-    slidesNavPosition: "bottom",
-    controlArrows: false,
-    verticalCentered: true,
-    mnFullpageSlidesNavigation: false,
-    mnFullpageSlidesNavPosition: "bottom"
 
-  });
+    /* tslint:disable:no-unused-variable */
+    @Output() private options: MnFullpageOptions = new MnFullpageOptions({
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        verticalCentered: true,
+        lockAnchors: true
 
-  constructor() { }
+    });
 
-  ngOnInit() {
-  }
+    constructor() {
+        this.gulpGolang = new Project(
+            {
+                title: "Gulp-Golang",
+                subtitle: "That good",
+                img: '/assets/img/blog.png',
+                logo: '/assets/img/blog.png',
+                link: 'http://blog.cescoferraro.xyz',
+                description: 'Here it is where I pour my tech heart. ' +
+                'Mainly about golang/angular2/ionic2/swift'
+            })
+
+
+    }
+
 
 }

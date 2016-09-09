@@ -1,25 +1,14 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-declare var textFit: any
+import { Component } from '@angular/core';
 @Component({
-    selector: 'cover',
+    selector: 'app-cover',
     templateUrl: 'cover.component.html',
     styleUrls: ['cover.component.scss']
 })
 
 
 
-export class CoverComponent implements AfterViewInit {
+export class CoverComponent  {
 
-    constructor() {
-
-
-    }
-
-
-    ngAfterViewInit() {
-        // setTimeout(textFit(document.getElementById('name')),20000)
-        // setTimeout(console.log("jkn"),20000)
-    }
-
+    constructor() {   }
 
 }

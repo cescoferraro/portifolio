@@ -1,9 +1,8 @@
+<!--suppress HtmlUnknownAnchorTarget -->
 <md-toolbar [color]="'yeah'">
 	<span class="toolbar-title"><a href="/#cover">cescoferraro.xyz</a></span>
-
-	 <!--This fills the remaining space of the current row-->
 	<span class="fill-space"></span>
-
+<!--suppress HtmlUnknownAnchorTarget -->
 	<span class="toolbar-icons">
 		<a href="/#cover"><md-icon>home</md-icon></a>
 		<a href="/#about"><md-icon>person</md-icon></a>
@@ -14,22 +13,25 @@
 </md-toolbar>
 
 <div [mnFullpage]="options">
-	<cover class="section" data-anchor="cover"></cover>
-	<about class="section" data-anchor="about"></about>
+	<app-cover class="section" data-anchor="cover"></app-cover>
+	<app-about class="section" data-anchor="about"></app-about>
 	<div class="section" data-anchor="projects">
 		<div class="slide">
-			<app-project [title]="'Gulp-Golang'" [subtitle]="'Javascript'" [img]="'/assets/img/gulp2.png'" [logo]="'/assets/img/js.png'" [link]="'http://www.github.com/cescoferraro/gulp-golang'"
-				[description]="'A gulp wrapper for golang commands. Completely inspired by gulp-go. This aims to let users have better control of their golang environment with the build system. Because go run does not solve all problems.'"></app-project>
+			<app-project [title]="'Gulp-Golang'" [subtitle]="'Javascript'" [img]="'/assets/img/gulp2.png'"
+						 [logo]="'/assets/img/js.png'" [link]="'http://www.github.com/cescoferraro/gulp-golang'"
+						 [description]="'A gulp wrapper for golang commands. Completely inspired by gulp-go. This aims to let users have better control of their golang environment with the build system. Because go run does not solve all problems.'"></app-project>
 		</div>
 		<div class="slide">
-			<app-project [title]="'Power'" [subtitle]="'Iot/Ionic2'" [link]="'https://iot.cescoferraro.xyz'" [logo]="'/assets/img/iot.png'" [img]="'/assets/img/iotscreen.png'"
-				[description]="'This projects aims to provide cheap solution to home automation systems.
+			<app-project [title]="'Power'" [subtitle]="'Iot/Ionic2'" [link]="'https://iot.cescoferraro.xyz'"
+						 [logo]="'/assets/img/iot.png'" [img]="'/assets/img/iotscreen.png'"
+						 [description]="'This projects aims to provide cheap solution to home automation systems.
 							Its an Ionic 2 app develop with all the cool tech you se around Angular2 blog, but as its tech, its still beta. But you can check it out!'"></app-project>
 		</div>
 		<div class="slide">
-			<app-project [title]="'My Blog'" [subtitle]="'Hugo/Golang'"  [img]="'/assets/img/blog.png'" [logo]="'/assets/img/blog.png'" [link]="'http://blog.cescoferraro.xyz'"
-				[description]="'Here it is where I pour my tech heart. Mainly about golang/angular2/ionic2/swift'"></app-project>
+			<app-project [title]="gulpGolang.title" [subtitle]="gulpGolang.subtitle" [img]="gulpGolang.img"
+						 [logo]="gulpGolang.logo" [link]="gulpGolang.logo"
+						 [description]="gulpGolang.description" [project]="gulpGolang"></app-project>
 		</div>
 	</div>
-	<footer class="section" data-anchor="hire-me"> </footer>
+	<app-footer class="section" data-anchor="hire-me"></app-footer>
 </div>

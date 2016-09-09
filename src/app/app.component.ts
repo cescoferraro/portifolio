@@ -1,5 +1,5 @@
-import { Component, Input, Output, ViewEncapsulation } from '@angular/core';
-import {MnFullpageDirective, MnFullpageOptions} from 'ng2-fullpage';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',

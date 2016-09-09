@@ -1,32 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-
-import { REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, FormBuilder, Validators, FORM_DIRECTIVES } from '@angular/forms'
+import {Component, OnInit} from '@angular/core';
+import {
+    FormControl,
+    FormGroup,
+    FormBuilder,
+    Validators,
+} from '@angular/forms';
 
 @Component({
-    selector: 'footer',
+    selector: 'app-footer',
     templateUrl: 'footer.component.html',
     styleUrls: ['footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-    hireMe: FormGroup
+    hireMe: FormGroup;
 
 
-
-
-    constructor(private _fb: FormBuilder) {
-        this.hireMe = this._fb.group({
-            'sender': new FormControl("", Validators.compose([Validators.required])),
-            'sendermail': new FormControl("", Validators.compose([Validators.required])),
-            'subject': new FormControl("", Validators.compose([Validators.required])),
-        })
+    constructor(private formBuilder: FormBuilder) {
+        this.hireMe = this.formBuilder.group({
+            'sender': new FormControl('', Validators.compose([Validators.required])),
+            'sendermail': new FormControl('', Validators.compose([Validators.required])),
+            'subject': new FormControl('', Validators.compose([Validators.required])),
+        });
     }
 
     ngOnInit() {
     }
 
     hire() {
-
-        window.open('mailto:francescoaferraro@gmail.com?subject=Iwannahireyou&body='+this.hireMe.value.subject);
-        console.log("skfjkndf")
+        let text = this.hireMe.value.subject;
+        window.open('mailto:francescoaferraro@gmail.com?subject=Iwannahireyou&body=' + text);
+        console.log('skfjkndf');
     }
 }
