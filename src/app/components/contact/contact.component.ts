@@ -7,9 +7,9 @@ import {
 } from '@angular/forms';
 
 @Component({
-    selector: 'app-footer',
-    templateUrl: 'footer.component.html',
-    styleUrls: ['footer.component.scss']
+    selector: 'app-contact',
+    templateUrl: 'contact.component.html',
+    styleUrls: ['contact.component.scss']
 })
 export class FooterComponent implements OnInit {
     hireMe: FormGroup;

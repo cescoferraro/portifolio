@@ -11,11 +11,11 @@ export class Project {
     description: string;
 
     constructor(private obj:any){
-        this.obj.title = this.title;
-        this.obj.subtitle = this.title;
-        this.obj.logo = this.title;
-        this.obj.img = this.img;
-        this.obj.link = this.link;
-        this.obj.description = this.description;
+        this.title = obj.title ;
+        this.subtitle = obj.subtitle;
+        this.logo = obj.logo;
+        this.img = obj.img;
+        this.link = obj.link;
+        this.description = obj.description;
     }
 }

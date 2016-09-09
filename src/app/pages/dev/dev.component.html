@@ -1,0 +1,29 @@
+<md-toolbar [color]="'yeah'">
+	<span class="toolbar-title"><a href="/#cover">cescoferraro.xyz</a></span>
+	<span class="fill-space"></span>
+	<span class="toolbar-icons">
+		<md-icon (click)="fullpageService.moveTo('cover', 1);">home</md-icon>
+		<md-icon (click)="fullpageService.moveTo('about', 2);">person</md-icon>
+		<md-icon (click)="fullpageService.moveTo('projects', 3);">dashboard</md-icon>
+		<md-icon (click)="fullpageService.moveTo('hire-me', 4);">phone</md-icon>
+	</span>
+
+</md-toolbar>
+
+<div [mnFullpage]="options">
+	<app-cover class="section" [name]="'@cescoferraro'" [profession]="'FullStack Developer'" data-anchor="cover"></app-cover>
+	<app-about class="section" data-anchor="about"></app-about>
+	<div class="section" data-anchor="projects">
+
+		<div class="slide">
+			<app-project [project]="gulpGolang"></app-project>
+		</div>
+		<div class="slide">
+			<app-project [project]="iot"></app-project>
+		</div>
+		<div class="slide">
+			<app-project [project]="blog"></app-project>
+		</div>
+	</div>
+	<app-contact class="section" data-anchor="hire-me"></app-contact>
+</div>

@@ -1,7 +1,7 @@
-@import "../../styles.scss";
+@import "../../../styles.scss";
 
 .md-yeah{
-  background-color: $primary-color-dark;
+  background-color: $dev-primary-color-dark;
   position: fixed;
   z-index: 1;
   .toolbar-title a{
@@ -10,7 +10,7 @@
   .fill-space {
     flex: 1 1 auto;
   }
-  .toolbar-icons a {
+  .toolbar-icons {
     color: $primary-color-text;
   }
 }

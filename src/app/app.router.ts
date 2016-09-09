@@ -1,9 +1,9 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CoverComponent }      from './cover/cover.component';
-import { DevComponent }  from './dev/dev.component';
-import { ResumeComponent } from './resume/resume.component';
-import { EngComponent } from './eng/eng.component';
+import { CoverComponent }      from './components/cover/cover.component';
+import { DevComponent }  from './pages/dev/dev.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { EngComponent } from './pages/eng/eng.component';
 
 const appRoutes: Routes = [
   {

@@ -1,6 +1,6 @@
 // import { Component } from '@angular/core';
 // import { By } from '@angular/platform-browser';
-// import { FooterComponent } from './footer.component';
+// import { FooterComponent } from './contact.component';
 //
 // describe('Component: Footer', () => {
 //   let builder: TestComponentBuilder;
@@ -28,7 +28,7 @@
 // @Component({
 //   selector: 'test',
 //   template: `
-//     <app-footer></app-footer>
+//     <app-contact></app-contact>
 //   `,
 //   directives: [FooterComponent]
 // })
