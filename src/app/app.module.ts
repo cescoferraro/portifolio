@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ElementRef } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MnFullpageDirective, MnFullpageOptions } from 'ng2-fullpage';
+import { MnFullpageDirective } from 'ng2-fullpage';
 import { AppComponent } from './app.component';
 import { CoverComponent } from './cover/cover.component'
 import { AboutComponent } from './about/about.component'

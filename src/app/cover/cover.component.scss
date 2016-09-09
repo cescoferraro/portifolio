@@ -14,10 +14,7 @@ $photo-url: '/assets/img/selfie.jpg';
   .photo {
 
     height: 65vh;
-    background: url($photo-url);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background: url($photo-url) no-repeat fixed center;
     width: 70vw;
     margin-left: 15vw;
   }
@@ -25,7 +22,6 @@ $photo-url: '/assets/img/selfie.jpg';
   .caption{
     height: 20vh;
     color: white;
-    // background-color: rgba(255,0,0,0.7);
     padding-top: 5vh;
   }
 }

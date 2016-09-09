@@ -1,8 +1,9 @@
-import { ModuleWithProviders, Component }  from '@angular/core';
+import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CoverComponent }      from './cover/cover.component';
 import { DevComponent }  from './dev/dev.component';
-import { ResumeComponent } from './resume/resume.component'
+import { ResumeComponent } from './resume/resume.component';
+import { EngComponent } from './eng/eng.component';
 
 const appRoutes: Routes = [
   {
@@ -24,6 +25,10 @@ const appRoutes: Routes = [
     {
     path: 'vitae',
     component: ResumeComponent
+  },
+    {
+    path: 'eng',
+    component: EngComponent
   }
 ];
 
