@@ -12,7 +12,6 @@ import { FooterComponent } from './components/contact/contact.component';
 import { MdInput } from '@angular2-material/input';
 import { MdCard } from '@angular2-material/card';
 import { MdToolbar } from '@angular2-material/toolbar';
-import { MdButton } from '@angular2-material/button';
 import { MdIcon } from '@angular2-material/icon';
 import { MdIconRegistry } from '@angular2-material/icon';
 import { ProjectComponent } from './components/project/project.component';
@@ -20,14 +19,13 @@ import { router } from './app.router';
 import { DevComponent } from './pages/dev/dev.component';
 import { EngComponent } from './pages/eng/eng.component';
 import { ResumeComponent } from './components/resume/resume.component';
-
+import { MdButtonModule } from '@angular2-material/button';
 
 @NgModule({
     declarations: [
         MnFullpageDirective,
         MdInput,
         MdCard,
-        MdButton,
         MdIcon,
         MdToolbar,
         CoverComponent,
@@ -42,6 +40,7 @@ import { ResumeComponent } from './components/resume/resume.component';
         BrowserModule,
         FormsModule,
         HttpModule,
+        MdButtonModule,
         router
     ],
     providers: [FormBuilder, MdIconRegistry,MnFullpageService],

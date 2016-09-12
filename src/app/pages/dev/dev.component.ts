@@ -18,6 +18,7 @@ export class DevComponent {
     /* tslint:disable:no-unused-variable */
     @Output() private options: MnFullpageOptions = new MnFullpageOptions({
         slidesNavigation: true,
+        controlArrows: false,
         slidesNavPosition: 'bottom',
         verticalCentered: true,
         lockAnchors: true

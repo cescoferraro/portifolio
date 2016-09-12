@@ -1,5 +1,5 @@
 <md-toolbar [color]="'yeah'">
-	<span class="toolbar-title"><a href="/#cover">cescoferraro.xyz</a></span>
+	<span class="toolbar-title" (click)="fullpageService.moveTo('cover', 1);">cescoferraro.xyz</span>
 	<span class="fill-space"></span>
 	<span class="toolbar-icons">
 		<md-icon (click)="fullpageService.moveTo('cover', 1);">home</md-icon>
